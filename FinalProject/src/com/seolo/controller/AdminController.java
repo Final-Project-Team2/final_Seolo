@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.seolo.admin.INoticeDAO;
 import com.seolo.admin.NoticeDTO;
+import com.seolo.idao.IIntroductionDAO;
 import com.seolo.personal.PersonalDTO;
 
 @Controller
@@ -194,7 +195,4 @@ public class AdminController
 		
 		return "redirect:noticelist.action";
 	}
-	
-
-	
 }

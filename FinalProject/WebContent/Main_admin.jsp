@@ -50,7 +50,7 @@
       </div>
       <div class="col-md-4">
         <h2>서비스 소개</h2><br>
-        <p><a class="btn btn-primary" href="<%=cp%>/Introduction.jsp" role="button">조회하기 »</a></p>
+        <p><a class="btn btn-primary" href="introduction.action" role="button">조회하기 »</a></p>
       </div>
       <div class="col-md-4">
         <h2>자주 묻는 질문</h2><br>
