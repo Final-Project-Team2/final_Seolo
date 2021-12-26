@@ -53,7 +53,7 @@ integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amn
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">&nbsp;&nbsp;체크리스트</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="<%=cp%>/MyChecklists.jsp">나의 체크리스트</a>
+          <a class="dropdown-item" href="<%=cp%>/MyChecklists.jsp">나의 체크리스트</a>	<!-- 여기 -->
           <a class="dropdown-item" href="<%=cp%>/searchRegion_gu.jsp">지역 정보</a>
         </div>
       </li>
