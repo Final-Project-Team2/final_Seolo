@@ -45,16 +45,12 @@ public class ChecklistController
 		}
 		else
 		{
-			PersonalDTO user = (PersonalDTO)session.getAttribute("userLogin");
-			  
-			int acNo = Integer.parseInt(user.getAc_No());
-
 			model.addAttribute("scores", dao.scoreList());
 			// model.addAttribute("residences", dao.residenceList());
 		}
 		
-		return "ChecklistWrite_first.jsp";
-		// return "WEB-INF/view/ChecklistWrite_first.jsp";
+		// return "ChecklistWrite_first.jsp";
+		return "WEB-INF/view/ChecklistWrite_first.jsp";
 	}
 
 	// 1번 체크리스트 입력해준다
@@ -145,8 +141,8 @@ public class ChecklistController
 			
 		}
 		
-		return "ChecklistWrite_second.jsp";
-		// return "WEB-INF/view/ChecklistWrite_second.jsp";	최종때 이걸로 바꿔주기
+		// return "ChecklistWrite_second.jsp";
+		return "WEB-INF/view/ChecklistWrite_second.jsp";	
 	}
 
 	
@@ -183,8 +179,8 @@ public class ChecklistController
 			model.addAttribute("result", result);
 		}
 
-		return "Adress_ok.jsp";
-		// return "WEB-INF/view/Adress_ok.jsp";	최종때 이걸로 바꿔주기
+		// return "Adress_ok.jsp";
+		return "WEB-INF/view/Adress_ok.jsp";	
 	}
 
 	
@@ -220,8 +216,8 @@ public class ChecklistController
 		}
 		//int acNo = 28; 		// 나중에 세션에서 받아와야함
 		
-		return "SecondTimeInsertForm.jsp";
-		// return "WEB-INF/view/SecondTimeInsertForm.jsp";
+		// return "SecondTimeInsertForm.jsp";
+		return "WEB-INF/view/SecondTimeInsertForm.jsp";
 	}
 
 	
@@ -256,8 +252,8 @@ public class ChecklistController
 		
 		// int acNo = 23;		 // 나중에 세션에서 받아와야함
 		
-		return "SecondScoreInsertForm.jsp";
-		// return "WEB-INF/view/SecondScoreInsertForm.jsp";
+		// return "SecondScoreInsertForm.jsp";
+		return "WEB-INF/view/SecondScoreInsertForm.jsp";
 	}
 
 
@@ -312,7 +308,8 @@ public class ChecklistController
 			model.addAttribute("scoreList", scoreList);
 		}
 		
-		return "ChecklistWrite_second.jsp";
+		// return "ChecklistWrite_second.jsp";
+		return "WEB-INF/view/ChecklistWrite_second.jsp";
 	
 	}
 
@@ -361,7 +358,8 @@ public class ChecklistController
 			model.addAttribute("scoreList", scoreList);
 		}
 		
-		return "ChecklistWrite_second.jsp";
+		// return "ChecklistWrite_second.jsp";
+		return "WEB-INF/view/ChecklistWrite_second.jsp";
 	
 	}
 	
@@ -399,7 +397,8 @@ public class ChecklistController
 			model.addAttribute("scoreList", dao.scoreList(checkNo));
 		}
 		
-		return "ChecklistWrite_second.jsp";
+		// return "ChecklistWrite_second.jsp";
+		return "WEB-INF/view/ChecklistWrite_second.jsp";
 		
 	}
 
@@ -435,7 +434,9 @@ public class ChecklistController
 			model.addAttribute("scoreList", dao.scoreList(checkNo));
 		}
 		
-		return "ChecklistWrite_second.jsp";
+		// return "ChecklistWrite_second.jsp";
+		return "WEB-INF/view/ChecklistWrite_second.jsp";
+		
 	}
 	
 	
@@ -459,7 +460,8 @@ public class ChecklistController
 			model.addAttribute("time", dao.plusTime(plusTimeNo));
 		}
 		
-		return "SecondTimeUpdateForm.jsp";
+		// return "SecondTimeUpdateForm.jsp";
+		return "WEB-INF/view/SecondTimeUpdateForm.jsp";
 	
 	}
 	
@@ -486,7 +488,8 @@ public class ChecklistController
 			model.addAttribute("scores", dao.scores());
 		}
 		
-		return "SecondScoreUpdateForm.jsp";
+		// return "SecondScoreUpdateForm.jsp";
+		return "WEB-INF/view/SecondScoreUpdateForm.jsp";
 
 	}
 	
@@ -515,7 +518,8 @@ public class ChecklistController
 				dao.modifyTime(dto);
 		}
 		
-		return "ChecklistWrite_second.jsp";
+		// return "ChecklistWrite_second.jsp";
+		return "WEB-INF/view/ChecklistWrite_second.jsp";
 		
 	}
 	
@@ -539,7 +543,8 @@ public class ChecklistController
 				dao.modifyScore(dto);
 		}
 			
-		return "ChecklistWrite_second.jsp";
+		// return "ChecklistWrite_second.jsp";
+		return "WEB-INF/view/ChecklistWrite_second.jsp";
 		
 	}
 	
@@ -574,7 +579,8 @@ public class ChecklistController
 			
 		}
 		
-		return "ChecklistWrite_third.jsp";
+		// return "ChecklistWrite_third.jsp";
+		return "WEB-INF/view/ChecklistWrite_third.jsp";
 		
 	}
 	
@@ -616,7 +622,8 @@ public class ChecklistController
 			model.addAttribute("list",list);
 		}
 		
-		return "ChecklistWrite_third.jsp";
+		// return "ChecklistWrite_third.jsp";
+		return "WEB-INF/view/ChecklistWrite_third.jsp";
 		
 	}
 	
@@ -661,7 +668,8 @@ public class ChecklistController
 			model.addAttribute("list",dao.stickerList(acNo));
 		}
 		
-		return "ChecklistWrite_third.jsp";
+		// return "ChecklistWrite_third.jsp";
+		return "WEB-INF/view/ChecklistWrite_third.jsp";
 	}
 	
 	
